@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Demo app</title>
+    <meta charset="utf-8">
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag "base" %>
+    <%= javascript_include_tag 'jquery.min', 'rails', 'application' %>
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<li>
+  <p class="title"><span><%= default["type_of_media"].titleize %>: </span><a href="#url-to-non-js-view-of-item"><%= default["header"] %></a></p>
+
+  <div class="details" style="display:none;">
+    <p class="header"><span><a class="back" href="#">« Back to list</a></span><%= default["header"] %></p>
+    
+    <ul>
+      <%- default.fields do |key, value| -%>
+        <li><p><span><%= key.titleize %>: </span><%= value %></p></li>
+      <%- end -%>
+    </ul>
+  </div>
+</li>

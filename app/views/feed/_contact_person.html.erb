@@ -1,0 +1,17 @@
+<li>
+  <p class="title"><span><%= contact_person["type_of_media"].titleize %>: </span><a href="#"><%= contact_person["name"] %></a></p>
+  
+  <div class="details">
+    <p class="header"><span><a class="back" href="#">« Back to list</a></span><%= contact_person["name"] %></p>
+    
+    <img class="photo" src="<%= contact_person.photo %>">
+    
+    <ul>
+      <%- contact_person.fields do |key, value| -%>
+        <li><p><span><%= key.titleize %>: </span><%= value %></p></li>
+      <%- end -%>
+    </ul>
+    
+  </div>
+  
+</li>
